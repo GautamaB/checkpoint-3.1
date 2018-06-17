@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Button, Col, ListGroupItem, Row } from "reactstrap";
+import Button from "./Button";
+
+import { Container, Col, ListGroupItem, Row } from "reactstrap";
 
 const HeroWanted = ({ name, picture, status }) => (
   <div>
@@ -13,10 +15,10 @@ const HeroWanted = ({ name, picture, status }) => (
             <p>{status}</p>
           </Col>
           <Col>
-            <img className="img-fluid" alt="" src={picture} />
+            <img alt="{name}" src={picture} />
           </Col>
           <Col>
-            <Button onClick="Alive">Kill</Button>
+            <Button />
           </Col>
         </Row>
       </ListGroupItem>
